@@ -9,6 +9,7 @@ import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-pa
 import { MarkersPageComponent } from './pages/markers-page/markers-page.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     FullScreenPageComponent,
     MarkersPageComponent,
     PropertiesPageComponent,
-    ZoomPageComponent
+    ZoomPageComponent,
+    MenuButtonComponent
   ],
   imports: [
     CommonModule,

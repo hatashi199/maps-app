@@ -1,1 +1,92 @@
-<p>side-menu works!</p>
+<nav
+	class="fixed bg-primary text-secondary p-4 w-full sm:max-w-xs z-10"
+	[ngClass]="{
+		'translate-x-0': menuActive,
+		'-translate-x-full': !menuActive
+	}"
+>
+	<header class="inline-flex gap-4">
+		<div class="w-[32px] h-[32px]"></div>
+		<h1 class="text-lg font-bold">Maps App</h1>
+	</header>
+	<ul class="flex flex-col">
+		<li class="inline-flex gap-2 items-center">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 20 20"
+			>
+				<path
+					fill="currentColor"
+					d="M16.219 1.943c.653.512 1.103 1.339 1.287 2.205l.065.026l2.045.946a.66.66 0 0 1 .384.597v12.367a.665.665 0 0 1-.85.634l-5.669-1.6l-6.74 1.858a.67.67 0 0 1-.371-.004L.474 17.217a.66.66 0 0 1-.474-.63V3.998c0-.44.428-.756.855-.632l5.702 1.661l2.898-.887q.06-.018.122-.025c.112-.656.425-1.286.95-1.9c.623-.73 1.716-1.158 2.781-1.209c1.105-.053 1.949.183 2.91.936M1.333 4.881v11.215l4.87 1.449V6.298zm8.209.614l-2.006.613v11.279l5.065-1.394v-3.295c0-.364.299-.659.667-.659s.666.295.666.66v3.177l4.733 1.335V6.136l-1.12-.52q-.028.165-.073.323A6.1 6.1 0 0 1 16.4 8.05l-2.477 3.093a.67.67 0 0 1-1.073-.037l-2.315-3.353q-.574-.799-.801-1.436a3.7 3.7 0 0 1-.192-.822m3.83-3.171c-.726.035-1.472.327-1.827.742c-.427.5-.637.968-.679 1.442c-.05.571-.016.974.126 1.373c.105.295.314.669.637 1.12l1.811 2.622l1.91-2.385a4.8 4.8 0 0 0 .841-1.657c.24-.84-.122-2.074-.8-2.604c-.695-.545-1.22-.692-2.018-.653m.138.697c1.104 0 2 .885 2 1.977a1.99 1.99 0 0 1-2 1.977c-1.104 0-2-.885-2-1.977s.896-1.977 2-1.977m0 1.318a.663.663 0 0 0-.667.659c0 .364.299.659.667.659a.663.663 0 0 0 .666-.66a.663.663 0 0 0-.666-.658"
+				/></svg
+			><span>Mapa</span>
+		</li>
+		<li class="inline-flex gap-2 items-center">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+			>
+				<g
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+				>
+					<path
+						d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+					/>
+					<circle
+						cx="12"
+						cy="10"
+						r="3"
+					/>
+				</g>
+			</svg>
+			<span>Marcas</span>
+		</li>
+		<li class="inline-flex gap-2 items-center">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+			>
+				<g
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+				>
+					<path
+						d="M2.6 10.4a2.12 2.12 0 1 0 3.02 2.98L12 7l6.4 6.4a2.12 2.12 0 1 0 2.979-3.021L13.7 2.7a2.4 2.4 0 0 0-3.404.004Z"
+					/>
+					<path d="M20 14v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6" />
+					<path d="M14 22v-6a2 2 0 0 0-4 0v6" />
+				</g>
+			</svg>
+			<span>Propiedades</span>
+		</li>
+		<li class="inline-flex gap-2 items-center">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 15 15"
+			>
+				<path
+					fill="currentColor"
+					fill-rule="evenodd"
+					d="M10 6.5a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m-.691 3.516a4.5 4.5 0 1 1 .707-.707l2.838 2.837a.5.5 0 0 1-.708.708zM4.25 6.5a.5.5 0 0 1 .5-.5H6V4.75a.5.5 0 0 1 1 0V6h1.25a.5.5 0 0 1 0 1H7v1.25a.5.5 0 0 1-1 0V7H4.75a.5.5 0 0 1-.5-.5"
+					clip-rule="evenodd"
+				/>
+			</svg>
+			<span>Zoom</span>
+		</li>
+	</ul>
+</nav>

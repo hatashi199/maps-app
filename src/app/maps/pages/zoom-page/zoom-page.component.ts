@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './zoom-page.component.html',
-  styleUrl: './zoom-page.component.css'
+	selector: 'maps-zoom',
+	templateUrl: './zoom-page.component.html',
+	styleUrl: './zoom-page.component.css'
 })
-export class ZoomPageComponent {
-
-}
+export class ZoomPageComponent {}

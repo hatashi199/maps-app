@@ -1,1 +1,3 @@
-<p>maps-layout works!</p>
+<maps-menu-button (onShowMenu)="menuVisible($event)" />
+<maps-side-menu [menuActive]="isMenuVisible" />
+<router-outlet />

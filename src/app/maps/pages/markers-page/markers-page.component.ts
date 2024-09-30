@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './markers-page.component.html',
-  styleUrl: './markers-page.component.css'
+	selector: 'maps-markers',
+	templateUrl: './markers-page.component.html',
+	styleUrl: './markers-page.component.css'
 })
-export class MarkersPageComponent {
-
-}
+export class MarkersPageComponent {}

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './full-screen-page.component.html',
-  styleUrl: './full-screen-page.component.css'
+	selector: 'maps-full-screen',
+	templateUrl: './full-screen-page.component.html',
+	styleUrl: './full-screen-page.component.css'
 })
-export class FullScreenPageComponent {
-
-}
+export class FullScreenPageComponent {}
