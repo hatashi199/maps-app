@@ -1,27 +1,24 @@
 # MapsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Dev
 
-## Development server
+1. Clonar el proyecto.
+2. Ejecutar `npm install`.
+3. Levantar backend `npm run backend`.
+4. Ejecutar la app `npm start` o `ng serve -o`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Envs
 
-## Code scaffolding
+1. Definir como variable de entorno en un fichero .env tu ApiKey de **MapTiler**
+2. Generar la carpeta environments con la línea de comandos `ng g environments`, dentro del proyecto.
+3. También se puede crear manualmente, pero los nombres de los ficheros deben ser `environment.development.ts` y `environment.ts`.
+4. Si lo hace de forma manual debes actualizar el angular.json, colocando dentro de development lo siguiente (Siempre y cuando lances la app en modo desarrollo).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```json
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
+```

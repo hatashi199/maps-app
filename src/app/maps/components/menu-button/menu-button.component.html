@@ -1,6 +1,10 @@
 <div
-	class="fixed z-20 text-secondary p-4"
+	class="fixed z-20 p-4"
 	(click)="showMenuEmitter()"
+	[ngClass]="{
+		'text-secondary bg-primary': isVisible,
+		'text-primary bg-secondary': !isVisible
+	}"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
