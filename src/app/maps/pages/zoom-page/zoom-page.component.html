@@ -1,1 +1,29 @@
-<p>zoom-page works!</p>
+<section #map></section>
+
+<div
+	class="fixed bottom-0 left-0 bg-secondary rounded-md shadow-md p-2 w-full max-w-md"
+>
+	<div class="mb-2">
+		<label
+			for="price-range"
+			class="block text-gray-700 font-bold mb-2"
+			>Zoom</label
+		>
+		<input
+			type="range"
+			class="w-full accent-primary"
+			min="-2"
+			max="18"
+			[value]="zoom"
+			(input)="zoomChanged(zoomInput.value)"
+			#zoomInput
+		/>
+	</div>
+	<div class="flex justify-between text-primary">
+		<span>Zoom: {{ zoom | number: '2.2-2' }}</span>
+		<div class="flex flex-col gap-2">
+			<span>Lng: {{ lng | number: '2.2-2' }}</span>
+			<span>Lat: {{ lat | number: '2.2-2' }}</span>
+		</div>
+	</div>
+</div>

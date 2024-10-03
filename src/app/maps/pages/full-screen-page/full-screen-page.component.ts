@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Map } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
 import { environment } from '../../../../environments/environment.development';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 @Component({
 	selector: 'maps-full-screen',
