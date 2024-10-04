@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { LngLat, LngLatLike, Map } from 'maplibre-gl';
 import { environment } from '../../../../environments/environment.development';
-import 'maplibre-gl/dist/maplibre-gl.css';
 
 @Component({
 	selector: 'maps-zoom',

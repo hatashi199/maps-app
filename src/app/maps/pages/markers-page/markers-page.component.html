@@ -1,1 +1,20 @@
-<p>markers-page works!</p>
+<section #map></section>
+
+<ul class="fixed top-0 right-0 text-primary rounnded-md">
+	<li
+		*ngFor="let marker of markerList; let i = index"
+		[ngStyle]="{ backgroundColor: marker.color }"
+		class="px-6 py-2 cursor-pointer"
+		(dblclick)="deleteMarker(i)"
+		(click)="flyToMarker(marker.marker)"
+	>
+		Marca {{ i + 1 }}
+	</li>
+</ul>
+
+<button
+	class="fixed bottom-20 right-0 z-10 bg-secondary text-primary rounnded-md px-6 py-2"
+	(click)="createMarker()"
+>
+	Marcador central
+</button>

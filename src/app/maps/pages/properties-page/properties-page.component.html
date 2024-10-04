@@ -1,1 +1,39 @@
-<p>properties-page works!</p>
+<section class="bg-secondary">
+	<div class="text-center py-10">
+		<h1 class="text-4xl font-bold text-primary mb-4">
+			Lista de Propiedades
+		</h1>
+		<p class="text-lg text-primary/60">
+			Éstas son las magníficas posesiones que me pertenecen.
+		</p>
+	</div>
+	<div
+		class="px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16"
+	>
+		<div
+			class="grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3"
+		>
+			<div
+				*ngFor="let property of houses"
+				class="relative"
+			>
+				<maps-mini-map [lng_lat]="property.lngLat" />
+				<div class="relative mt-5">
+					<a
+						href="#"
+						class="block mb-3 hover:underline text-primary hover:text-primary/80"
+					>
+						<h2
+							class="text-xl font-bold text-primary transition-colors duration-200 hover:text-primary/80"
+						>
+							{{ property.title }}
+						</h2>
+					</a>
+					<p class="mb-4 text-primary/60">
+						{{ property.description }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
