@@ -48,9 +48,14 @@ export class MarkersPageComponent implements AfterViewInit {
 
 	addMarker(lng_lat: LngLat, color: string) {
 		if (!this.map) return;
+		if (this.markerList.length === 10) {
+			this.deleteMarker(0);
+		}
+
 		const marker = new Marker({ color, draggable: true })
 			.setLngLat(lng_lat)
 			.addTo(this.map);
+
 		this.markerList.push({ color, marker });
 		this.saveToLocalStorage();
 		this.onMarkerMoveUpdateLocalStorage(marker);

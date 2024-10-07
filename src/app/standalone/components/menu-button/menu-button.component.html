@@ -1,9 +1,9 @@
 <div
-	class="fixed z-20 p-4"
+	class="fixed top-3 left-3 z-20 p-3 rounded-md cursor-pointer"
 	(click)="showMenuEmitter()"
 	[ngClass]="{
 		'text-secondary bg-primary': isVisible,
-		'text-primary bg-secondary': !isVisible
+		'text-primary bg-secondary shadow': !isVisible
 	}"
 >
 	<svg

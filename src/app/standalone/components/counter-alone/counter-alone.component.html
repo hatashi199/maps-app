@@ -1,0 +1,28 @@
+<section>
+	<div
+		class="flex flex-col gap-4 rounded-md p-4 mx-auto max-w-xs sm:max-w-sm w-full bg-secondary text-primary"
+	>
+		<h2 class="text-center text-lg">Contador</h2>
+		<span class="font-bold text-xl text-center">{{ counter }}</span>
+		<div class="flex flex-col sm:flex-row gap-2">
+			<button
+				(click)="increaseCounter()"
+				class="flex-1 rounded-md bg-primary text-secondary px-6 py-2"
+			>
+				+
+			</button>
+			<button
+				(click)="resetCounter()"
+				class="flex-1 rounded-md bg-primary text-secondary px-6 py-2"
+			>
+				Reiniciar
+			</button>
+			<button
+				(click)="decreaseCounter()"
+				class="flex-1 rounded-md bg-primary text-secondary px-6 py-2"
+			>
+				-
+			</button>
+		</div>
+	</div>
+</section>

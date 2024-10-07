@@ -1,4 +1,4 @@
-@import url(./app//css/reset.css);
+@import url(./app/css/reset.css);
 
 @tailwind base;
 @tailwind components;
@@ -10,5 +10,5 @@ body {
 	font-family: sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
-	min-width: 100vh;
+	min-height: 100vh;
 }

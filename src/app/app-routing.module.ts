@@ -7,6 +7,13 @@ const routes: Routes = [
 		loadChildren: () =>
 			import('./maps/maps.module').then((m) => m.MapsModule)
 	},
+	{
+		path: 'standalone',
+		loadComponent: () =>
+			import(
+				'./standalone/pages/standalone-page/standalone-page.component'
+			).then((m) => m.StandalonePageComponent)
+	},
 	{ path: '**', redirectTo: 'maps' }
 ];
 

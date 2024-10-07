@@ -2,3 +2,8 @@ section {
 	width: 100vw;
 	height: 100vh;
 }
+
+.hover-scale-anim:hover > p {
+	transform: scale(1.1);
+	transition: transform 0.2s ease-in;
+}

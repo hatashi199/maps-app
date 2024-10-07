@@ -1,0 +1,12 @@
+<menu-button (onShowMenu)="menuVisible($event)" />
+<side-menu [menuActive]="isMenuVisible" />
+<section
+	class="flex flex-col text-center gap-2 bg-secondary text-primary max-w-md w-full mx-auto p-8 my-4 rounded-md"
+>
+	<h2 class="text-lg font-bold">Componente Standalone</h2>
+	<p class="text-primary/60 text-justify">
+		Este es un componente que no necesita ser importado en módulos.
+	</p>
+	<p class="text-primary/60">Es porque es su propio módulo {{ 1 + 1 }}</p>
+	<counter-alone [counter]="10" />
+</section>

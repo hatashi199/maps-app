@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-	selector: 'maps-menu-button',
+	selector: 'menu-button',
+	standalone: true,
+	imports: [CommonModule],
 	templateUrl: './menu-button.component.html',
 	styleUrl: './menu-button.component.css'
 })
